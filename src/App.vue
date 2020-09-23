@@ -1,24 +1,26 @@
 <template>
   <div id="app">
-    {{ message }}
+    
+    <pokemon></pokemon>
+    
   </div>
 </template>
 
 <script>
+import PokemonComponent from "./components/RickMorty.vue";
+//import RickMortyComponent from "./components/RickMorty.vue";
   export default {
     data() {
       return {
         message: 'Hola en vue',
       };
+    },
+    components:{
+      'pokemon':PokemonComponent,
     }
   }
 </script>
 
 <style scoped>
-  #app {
-    font-size: 25px;
-    font-family: "Calibri", sans-serif;
-    color: darkblue;
-    background: lightblue;
-  }
+  
 </style>
